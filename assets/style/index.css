@@ -1,0 +1,25 @@
+@import url(reset.css);
+
+.container {
+    width: min(100% - 30px, 1080px);
+    margin-inline: auto;
+}
+
+:root {
+    --app-dark-bg: #1a1d28;
+    --app-green: #33ab4e;
+    --app-purple: #833cff;
+    --app-orange: #ff833c;
+    --app-blue: #3c57ff;
+    --app-blue-hover: #364ee6;
+    --app-red: #ff3c57;
+    --app-light-gray: #f9f9f9;
+    --app--purple: #7339ac;
+    --app-white:#fff;
+    --app-lightgrey: #9a9a9a ;
+    --app-black:#000 ;
+}
+
+body {
+    background-color: var(--app-dark-bg)
+}
