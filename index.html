@@ -12,10 +12,98 @@
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/Shahadath-Rifat/reset-file/reset.css">
+        <script src='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.js'></script>
+        <link href='https://api.mapbox.com/mapbox-gl-js/v2.13.0/mapbox-gl.css' rel='stylesheet' />
+        <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.js"></script>
+        <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-directions/v4.1.0/mapbox-gl-directions.css" type="text/css">
         <link rel="stylesheet" href="./assets/style/index.css" media="all">
         <script src="./assets/script/index.js" defer></script>
     </head>
     <body>
-      
+        <header>
+            <div class="container flex">
+                <div class="title">
+                    <h1>RouteMaster</h1>
+                </div>
+                <nav>
+                     <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Menu</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                     </ul>
+                </nav>
+            </div>
+         </header>
+         <main>
+            <section id="banner">
+                <div class="container-banner">
+                    <h2>Welcome to RouteMaster</h2>
+                    <p>Discover a world of culinary delights with RouteMaster - the premier food delivery service.
+                       From savory dishes to sweet treats, our diverse selection of meals and snacks will satisfy 
+                       any craving. Order online or through our mobile app and enjoy the convenience of home delivery.
+                       Let us bring the flavors of the world to you!</p>
+                    <a href="#" class="btnn btn-primary">Order Now</a>
+                </div>
+            </section>
+            <section class="featured-dishes">
+                <div class="container">
+                  <h2>Featured Dishes</h2>
+                  <div class="dishes">
+                    <div class="dish">
+                      <img src="./assets/image/eaters-unsplash.jpg" alt="Featured Dish 1">
+                      <h3>Spicy Chicken Sandwich</h3>
+                      <p>Our signature spicy chicken breast served on a brioche bun with lettuce, tomato, and sriracha mayo.</p>
+                      <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                    <div class="dish">
+                        <img src="./assets/image/amirali-unsplash.jpg" alt="Featured Dish 2">
+                        <h3>RouteMaster's Special Burger</h3>
+                        <p>A juicy beef patty topped with melted cheddar cheese, lettuce, tomato, pickles, and special sauce on a toasted brioche bun.</p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                      </div>
+                    <div class="dish">
+                      <img src="./assets/image/max-griss--unsplash.jpg" alt="Featured Dish 3">
+                      <h3>Chocolate Lava Cake</h3>
+                      <p>Rich and decadent chocolate cake with a molten center and semisweet chocolate</p>
+                      <a href="#" class="btn btn-primary">Order Now</a>
+                    </div>
+                    <div class="dish">
+                        <img src="./assets/image/eaters---unsplash.jpg" alt="Featured Dish 4">
+                        <h3>Truffle Mac and Cheese</h3>
+                        <p>Creamy macaroni and cheese with black truffle and breadcrumbs.</p>
+                        <a href="#" class="btn btn-primary">Order Now</a>
+                      </div>
+                  </div>
+                </div>
+              </section>
+              <section id='locateUs' class='locate-us'>
+                <div class='container'>
+                    <div class='button'>
+                        <button type='button' class='button-locate'>Locate Us</button>
+                    </div>  
+                  <div id='map'></div>
+                </div>
+              </section>
+         </main>
+         <footer class="footer">
+            <div class="container-footer">
+              <div class="footer-top">
+                <div class="social-media-icons">
+                  <a href="#" target="_blank"><i class="fab fa-facebook"></i></a>
+                  <a href="#" target="_blank"><i class="fab fa-twitter"></i></a>
+                  <a href="#" target="_blank"><i class="fab fa-instagram"></i></a>
+                  <a href="#" target="_blank"><i class="fab fa-youtube"></i></a>
+                </div>
+                <p class="copywrite-message">© 2023 RouteMaster - All rights reserved</p>
+              </div>
+              <div class="footer-bottom">
+                <p id="address"> Our Location: -97.16094,49.86468 </p>
+                <p class="privacy-policy">Privacy Policy | Terms of Use</p>
+              </div>
+            </div>
+          </footer>
+          
     </body>
 </html>
+

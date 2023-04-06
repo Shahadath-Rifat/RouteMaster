@@ -23,3 +23,270 @@
 body {
     background-color: var(--app-dark-bg)
 }
+
+/*-------------Header------------*/
+header .flex {
+    display: flex;
+    justify-content: space-between;
+}
+
+.title h1 {
+    font-size: 29px;
+    text-transform: uppercase;
+    color:var(--app-white);
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    line-height: 56px;
+    text-align:right ;
+    font-family: 'Roboto', sans-serif;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style: none;
+    font-size: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav ul li {
+    display: inline;
+    line-height: 56px;
+}
+
+nav ul li a {
+    color:var(--app-white);
+    font-size: 22px;
+    font-weight: 500;
+    text-decoration: none;
+    letter-spacing: 0.2px;
+    transition: color 0.25s ease-in-out;
+}
+
+nav ul li a:hover {
+    color: #ff9800;
+}
+
+nav ul li + li {
+    margin-left: 20px;
+}
+
+
+main {
+    overflow: hidden; 
+    height:calc(100vh - 65px -65px);
+}
+
+/*--------------Hero-banner----------------*/
+#banner {
+    background: #fff url(../image/joshua-lawrence-unsplash.jpg) center center / cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 5px 5px rgb(0 0 0 / 0.5);
+}
+
+#banner h2 {
+    font-size: 66px;
+    font: bold;
+    color:#fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 27px;
+}
+
+
+  
+.container-banner {
+    max-width: 800px;
+    text-align: center;
+}
+  
+p {
+    font-size: 1.5rem;
+    color: #fff;
+    margin-bottom: 2rem;
+} 
+  
+.btnn {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    background-color: #f44336;
+    color: #fff;
+    border: none;
+    transition: all 0.3s ease;
+}
+  
+.btnn:hover {
+    background-color:#e05f37 ;
+}
+
+/*---------Section-1--------------*/
+
+
+.featured-dishes {
+    background-color: #f2f2f2;
+    padding: 4rem 0;
+}
+
+.featured-dishes h2 {
+   font-size: 40px;
+   text-align: center;
+}
+
+
+.dishes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}  
+  
+.dish {
+    width: 300px;
+    margin: 2rem;
+    text-align: center;
+}
+  
+.dish img {
+    width: 100%;
+    height: 260px;
+    margin-bottom: 1rem;
+}
+  
+.dish h3 {
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+}
+  
+.dish p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: var(--app-black);
+}
+  
+.btn {
+    font-size: 1.5rem;
+    padding: 1rem 2rem;
+    border-radius: 2rem;
+    text-transform: uppercase;
+    background-color: #ff9800;
+    color: #fff;
+    border: none;
+    transition: all 0.3s ease;
+}
+  
+.btn:hover {
+    background-color: #f44336;
+}
+  
+/*--------Mapbox section-------------*/
+
+.locate-us {
+    height: 100vh;
+    background-color:var(--app-light-gray);
+    text-align: center;
+}
+  
+.button-locate {
+    width: 205px;
+    height: 75px;
+    border-radius: 50px;
+    background-color:var(--app-green);
+    font-size: 27px;
+    color: #fff;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 26px 30px -10px;
+    transition: all 0.25s ease-in-out;
+    cursor: pointer;
+    text-transform: uppercase;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+  
+.button-locate:hover {
+    background-color: rgb(12, 214, 12);
+}
+
+#map {
+    background-color: var(--app-white);
+    border: 1px solid rgba(126, 126, 126, 0.5);
+    border-radius: 10px;
+    margin: 0 auto;
+    height: 600px;
+    width: 900px;
+  }
+
+
+
+/*------Footer-------*/
+
+
+.footer {
+    background-color: #222;
+    color: #fff;
+    padding: 2rem 0;
+}
+  
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+  
+.footer-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 2rem;
+}
+  
+.social-media-icons a {
+    font-size: 2rem;
+    color: #fff;
+    margin-right: 1rem;
+    transition: all 0.3s ease;
+}
+  
+.social-media-icons a:hover {
+    color: #ff9800;
+}
+  
+.copywrite-message {
+    font-size: 1.4rem;
+}
+  
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+  
+.footer-links {
+    list-style: none;
+    display: flex;
+}
+  
+.footer-links li {
+    margin-right: 1.9rem;
+}
+  
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+  
+.footer-links a:hover {
+    color: #ff9800;
+}
+
+.privacy-policy {
+    font-size: 1.4rem;
+}
+
